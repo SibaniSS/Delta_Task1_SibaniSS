@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    font-size: 16px; /* Set base font size */
+}
+
+h1 {
+    margin: 10px;
+    font-size:40px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.divv {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    font-size: 0px;
+}
+
+.box {
+    margin: .5px;
+    width: 9vw; 
+    height: 9vw; 
+}
+
+#tog {
+    margin: 10px 0px;
+}
+
+.allimg {
+    margin: 0;
+    width: 9vw; 
+    height: 9vw; 
+}
+
+
+.authcont {
+    width: 100vw;
+}
+
+
+.bluebullet {
+    position: absolute;
+    bottom: 40px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 3vw; /* Adjust width for mobile */
+    height: 3vw; /* Adjust height for mobile */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 650px) {
+    #tog {
+        margin-bottom: 7vh; /* Adjust margin for mobile */
+    }
+
+    .box {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .allimg {
+        width: 7vw;
+    }
+}
+
+
+#buttonContainer {
+    display: flex; 
+    justify-content: center; 
+}
+#pauseBtn, #resumeBtn, #resetBtn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px; 
+    background-color: #4CAF50; 
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#pauseBtn:hover, #resumeBtn:hover, #resetBtn:hover {
+    background-color: #45a049; 
+}
+
+#pauseBtn:active, #resumeBtn:active, #resetBtn:active {
+    background-color: #3e8e41; }
+#rotatebutton{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+}
+#rotateLeftBtn,#rotateRightBtn{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px; 
+    background-color: #4CAF50; 
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#rotateLeftBtn:hover, #rotateRightBtn:hover, #resetBtn:hover {
+    background-color: #45a049; 
+}
+
+#rotateLeftBtn:active, #rotateRightBtn:active {
+    background-color: #3e8e41; }
